@@ -6,7 +6,10 @@ namespace Session1Examples
     {
 
         	// Introduction to classes, objects and functions
-        
+        	
+	    	//////////////////////////////////////////////////////////////////////////////////////////
+	    	//Object visibility 
+	    
 		// This integer is only visible to functions and variables inside of this class, objects and other classes outside of this class cannot access it
 		private int myHiddenInteger = 4;
 		
@@ -20,6 +23,9 @@ namespace Session1Examples
 			MyFunction();
 			
 		}
+	    
+	    	//////////////////////////////////////////////////////////////////////////////////////////
+	   	// Functions
 	    
 	    	// This is a function
 	    	// This function is a public function, which means that it can be used by other classes inside this namespace (Session1Examples)
@@ -36,6 +42,9 @@ namespace Session1Examples
 		public static void MyStatic() {
 			Console.WriteLine("This function can be ran without initialisation of the class");	
 		}
+	    
+	    	//////////////////////////////////////////////////////////////////////////////////////////
+	    	// Classes
 	    
 	    	// This will create a new instance of the Example2A class 
 	    	// You can now access the variables and functions and change them at will
