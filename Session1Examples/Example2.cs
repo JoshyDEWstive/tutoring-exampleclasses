@@ -8,7 +8,7 @@ namespace Session1Examples
         	// Introduction to classes, objects and functions
         	
 	    	//////////////////////////////////////////////////////////////////////////////////////////
-	    	//Object visibility 
+	    	// Object visibility 
 	    
 		// This integer is only visible to functions and variables inside of this class, objects and other classes outside of this class cannot access it
 		private int myHiddenInteger = 4;
