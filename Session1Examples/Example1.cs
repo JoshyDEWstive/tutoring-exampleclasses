@@ -7,19 +7,21 @@ namespace Session1Examples
 
         // Introduction into syntax variables, if statements, for loops and white loops
 		
-        public static void Main(string[] args) // The initialiser function of the class. This will be ran first.
+        public Example1() // The initialiser function of the class. This will be ran first.
         { //Note how all functions, statements and other collections of code are contained within { } blocks
 
             //////////////////////////////////////////////////////////////////////////////////////////
-            //Syntax
+            // Syntax
 
             // First thing to ensure: Every command must be followed by a ';'
             //This is calling the class 'Debug' and running a function called 'WriteLine' and we are passing in a string.
+
             Console.WriteLine("Hello World!");
+
             //This function will print "Hello World" to the console
 
             //////////////////////////////////////////////////////////////////////////////////////////
-            //Variables
+            // Variables
 
             //There are four main types of variables in C#
             // Integers (which are real numbers - Any negative or positive number. They cannot have a decimal point)
@@ -54,7 +56,9 @@ namespace Session1Examples
             // Strings
 
             // You can also use a + to concatente two or more strings together
+
             myString = myString + " Apple!";
+
             // You can also use an inbuilt method for this
 
             string myFirstString = "Hello ";
@@ -62,9 +66,11 @@ namespace Session1Examples
             string myNewString = string.Concat(myFirstString, mySecondString);
 
             // You can find the length of a string my using str.Length - replace str with the name of your string
+
             int stringLength = myString.Length;
 
             // You can convert a string to upper or lowercase with
+
             myString = myString.ToUpper();
             myString = myString.ToLower();
 
@@ -92,6 +98,7 @@ namespace Session1Examples
             // This statement will compare the 'myString' variable to a string defined as 'Hello Apple!'
             // If myString is equal to 'Hello Apple' then the program will output 'He said apple!' in console
             // if myString is not equal to 'Hello Apple' then the program will output 'He didn't say apple!'
+
             Console.WriteLine(myString);
             if (myString == "hello apple!") {
                 Console.WriteLine("He said apple!");
@@ -100,10 +107,32 @@ namespace Session1Examples
             }
 
             //////////////////////////////////////////////////////////////////////////////////////////
+            // Arrays
+
+            // Arrays are a collection of diffrent values in a single variable
+            // Arrays must be initialised before they can be used
+            // Array indexs start at 0
+
+            // the indexes in this array begin at 0 and end at 9
+            int[] myArray = new int[10]; // This will create a one-dimensional integer array with a length of 10. 
+
+            // You can also predefine the values with { } brackets
+
+            int[] mySecondArray = { 1, 2, 3, 4 };
+
+            // You can also update elements in the array by:
+
+            myArray[3] = 6; // 3 is the Index (the location in the array) and 6 is what we are setting the index's value to.
+
+            // You can get the value by
+
+            int newValue = myArray[3];
+
+            //////////////////////////////////////////////////////////////////////////////////////////
             // For loops
 
             // This loop will start at 0 and keep incrementing by one until the middle condition ( i < length) is met.
-            
+
             int length = 10;
             // Assign the increment variable to (int i = 0)
             // Condition to stop at (i < length)

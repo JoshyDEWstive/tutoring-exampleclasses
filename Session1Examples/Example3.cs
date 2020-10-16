@@ -3,39 +3,44 @@ using System;
 namespace Session1Examples
 {
 
-  //////////////////////////////////////////////////////////////////////////////////////////
-  // Program Aim
+      //////////////////////////////////////////////////////////////////////////////////////////
+      // Program Aim
   
-  // Demonstrate basic variables, functions and classes by creating a circle object that can return
-  // various information about the circle.
+      // Demonstrate basic variables, functions and classes by creating a circle object that can return
+      // various information about the circle.
   
-  // Systems used
-  // Arithmetic operators
-  // Using the Maths class
-  // Using classes and functions
+      // Systems used
+      // Arithmetic operators
+      // Using the Maths class
+      // Using classes and functions
   
-  // Introduction of doubles
-  // Doubles are basically the same as floats, however it is preferable to use floats.
-  // The basic math class uses doubles NOT floats
+      // Introduction of doubles
+      // Doubles are basically the same as floats, however it is preferable to use floats.
+      // The basic math class uses doubles NOT floats
   
   class Example3 {
   
-    public Circle newCircle = new Circle(5); // Create a circle with a radius of 5
-    
-    Console.WriteLine("Value of Pi used: " + Convert.ToString(Circle.Pi)); // Accessing the Circle class (not the newCircle object) and printing the value for Pi
-    Console.WriteLine(" "); // New empty line
-    Console.WriteLine("Radius of the circle is: " + Convert.ToString(newCircle.radius)); // Accesing the newCircle object and printing its radius
-    Console.WriteLine("Diameter of the circle is: " + Convert.ToString(newCircle.GetDiameter())); // Accesing the newCircle object and printing its diameter using its GetDiameter function
-    Console.WriteLine("Area of the circle is: " + Convert.ToString(newCircle.GetArea())); // Accesing the newCircle object and printing its area using its GetArea function
-    
+        public void Example() {
+
+            Circle newCircle = new Circle(5); // Create a circle with a radius of 5
+
+            Console.WriteLine("Value of Pi used: " + Convert.ToString(Circle.Pi)); // Accessing the Circle class (not the newCircle object) and printing the value for Pi
+            Console.WriteLine(" "); // New empty line
+            Console.WriteLine("Radius of the circle is: " + Convert.ToString(newCircle.radius)); // Accesing the newCircle object and printing its radius
+            Console.WriteLine("Diameter of the circle is: " + Convert.ToString(newCircle.GetDiameter())); // Accesing the newCircle object and printing its diameter using its GetDiameter function
+            Console.WriteLine("Area of the circle is: " + Convert.ToString(newCircle.GetArea())); // Accesing the newCircle object and printing its area using its GetArea function
+
+        }
+
+
   }
   
   // You can have as many Circle objects as you want, each object can have different values for each variables.
   class Circle {
     
-    public static double float Pi = 3.1415; // You can also use Math.Pi instead of approximating it.
+    public static double Pi = 3.1415; // You can also use Math.Pi instead of approximating it.
     
-    public int radius = 0;
+    public double radius = 0;
     
     // Instantiating a new class with an input
     public Circle(double _radius) {
