@@ -1,0 +1,38 @@
+How Many Vowels?
+------------------------
+
+Background information
+
+Say we have a string called myString that contains a word, you can
+create an array of all the characters in the string. Note that 
+you can must use "" marks to make a string and '' marks to make a character
+
+string myString = "Elephant";
+
+// This will make an array of characters
+char[] characterArray = myString.ToCharArray()
+
+// Checking if an char is equal something, note the '' marks
+if(characterArray[index] == 'a') { 
+// ...
+}
+
+------------------------
+
+Create a function that takes a string and returns how many vowels are in it.
+
+
+------------------------
+
+Examples
+
+CountVowels("Celebration") > 5
+CountVowels("Palm") > 1
+CountVowels("Prediction") > 4
+
+------------------------
+
+Note
+
+a, e, i, o, u are considered vowels (not y).
+All test cases are one word and only contain letters.
