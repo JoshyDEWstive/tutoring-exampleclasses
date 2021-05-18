@@ -1,0 +1,29 @@
+Conversion
+250 km/h convert to m/s
+
+1000m in 1 km 
+60min in 1 hour
+60sec in 1 min
+
+250 * 1000 = 250 000m/h 
+250 000 / 60 = 4 166 m/min 
+4 166 / 60 = 69 m/s 
+
+Easy way to convert km/h to m/s is to divide by 3.60
+
+250 / 3.6 = 69 m/s
+
+Boolean Logic
+
+== Equals
+!= Not Equals
+>  Greater than
+<  Less than
+>= Greater than or equal to
+<= Less than or equal to
+
+
+Horizontal > 0
+
+-1 0 1 
+ F F T 
